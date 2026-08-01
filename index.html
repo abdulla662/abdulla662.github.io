@@ -1,7 +1,7 @@
-<title>Abdulla Hamdy — .NET Backend Developer | Cairo, Egypt</title>
+<title>Abdulla Hamdy — Full Stack .NET Developer | Cairo, Egypt</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Abdulla Hamdy is a .NET Backend Developer from Cairo, Egypt specialising in Clean Architecture, ASP.NET Core, Docker, SignalR, and SaaS systems. Open to remote roles.">
-<meta name="keywords" content="Abdulla Hamdy, abdulla hamdy developer, abdulla662, .NET developer Egypt, backend developer Cairo, ASP.NET Core, Clean Architecture, Docker, SaaS developer">
+<meta name="description" content="Abdulla Hamdy is a Full Stack .NET Developer from Cairo, Egypt with 2+ years of professional experience in enterprise systems, Clean Architecture, ASP.NET Core, React, Docker, and SaaS. Open to remote roles.">
+<meta name="keywords" content="Abdulla Hamdy, abdulla hamdy developer, abdulla662, .NET developer Egypt, full stack developer Cairo, ASP.NET Core, Clean Architecture, React, Docker, SaaS developer, enterprise systems">
 <meta name="author" content="Abdulla Hamdy">
 <meta name="robots" content="index, follow">
 
@@ -30,8 +30,8 @@
   "alternateName": "abdulla662",
   "url": "https://abdulla662.github.io",
   "image": "https://avatars.githubusercontent.com/u/74573047",
-  "jobTitle": ".NET Backend Developer",
-  "description": "Backend Developer specialising in .NET, Clean Architecture, Docker, and SaaS systems.",
+  "jobTitle": "Full Stack .NET Developer",
+  "description": "Full Stack .NET Developer with 2+ years of professional experience in enterprise systems, Clean Architecture, ASP.NET Core, React, and SaaS platforms.",
   "address": { "@type": "PostalAddress", "addressLocality": "Cairo", "addressCountry": "EG" },
   "sameAs": [
     "https://github.com/abdulla662",
@@ -205,6 +205,29 @@ h1.name{font-size:clamp(3rem,9vw,6.5rem);font-weight:900;letter-spacing:-.05em;l
 .cinfo a{color:var(--sub);text-decoration:none;transition:color .2s}
 .cinfo a:hover{color:var(--vl)}
 
+/* EXPERIENCE */
+#experience{border-top:1px solid var(--rim)}
+.timeline{display:flex;flex-direction:column;gap:0;position:relative;margin-top:2.5rem}
+.timeline::before{content:'';position:absolute;left:18px;top:8px;bottom:8px;width:2px;background:linear-gradient(to bottom,var(--v),var(--c),transparent);opacity:.35}
+.te{display:flex;gap:1.5rem;position:relative}
+.te+.te{margin-top:2rem}
+.te-dot{flex-shrink:0;width:38px;height:38px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.1rem;border:2px solid var(--rim2);background:var(--s);position:relative;z-index:1}
+.te-body{flex:1;background:var(--card);border:1px solid var(--rim);border-radius:var(--r);padding:1.4rem 1.5rem;transition:border-color .2s,transform .2s}
+.te-body:hover{border-color:var(--rim2);transform:translateX(4px)}
+.te-top{display:flex;align-items:flex-start;justify-content:space-between;gap:1rem;flex-wrap:wrap;margin-bottom:.6rem}
+.te-title{font-size:1rem;font-weight:800;letter-spacing:-.03em}
+.te-company{font-size:.82rem;color:var(--vl);font-weight:700;margin-top:.1rem}
+.te-date{font-size:.72rem;color:var(--dim);white-space:nowrap;padding:.2rem .6rem;border-radius:5px;background:rgba(255,255,255,.04);border:1px solid var(--rim)}
+.te-desc{font-size:.845rem;color:var(--sub);line-height:1.75}
+.te-desc li{margin-bottom:.3rem}
+.te-tags{display:flex;flex-wrap:wrap;gap:.35rem;margin-top:.9rem}
+.edu-card{background:var(--card);border:1px solid var(--rim);border-radius:var(--r);padding:1.2rem 1.5rem;display:flex;align-items:center;gap:1.2rem;margin-top:2.5rem;transition:border-color .2s}
+.edu-card:hover{border-color:var(--rim2)}
+.edu-icon{font-size:1.8rem;flex-shrink:0}
+.edu-name{font-size:.95rem;font-weight:800;letter-spacing:-.02em}
+.edu-deg{font-size:.8rem;color:var(--sub);margin-top:.2rem}
+.edu-year{font-size:.72rem;color:var(--dim);margin-top:.1rem}
+
 footer{position:relative;z-index:1;padding:1.4rem clamp(1rem,4vw,3rem);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;font-size:.8rem;color:var(--dim);border-top:1px solid var(--rim);background:var(--bg)}
 footer a{color:var(--sub);text-decoration:none}footer a:hover{color:var(--vl)}
 </style>
@@ -220,6 +243,7 @@ footer a{color:var(--sub);text-decoration:none}footer a:hover{color:var(--vl)}
     <a class="logo" href="#hero">AH</a>
     <ul class="nl">
       <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
@@ -237,6 +261,7 @@ footer a{color:var(--sub);text-decoration:none}footer a:hover{color:var(--vl)}
 <!-- MOBILE MENU -->
 <div class="mob" id="mob">
   <a href="#skills" onclick="cm()">Skills</a>
+  <a href="#experience" onclick="cm()">Experience</a>
   <a href="#projects" onclick="cm()">Projects</a>
   <a href="#contact" onclick="cm()">Contact</a>
   <a href="https://github.com/abdulla662" target="_blank" rel="noopener">GitHub ↗</a>
@@ -248,10 +273,10 @@ footer a{color:var(--sub);text-decoration:none}footer a:hover{color:var(--vl)}
 <section id="hero">
   <div class="w">
     <div class="hero-inner">
-      <div class="ey" data-r>Cairo, Egypt · Open to Remote</div>
+      <div class="ey" data-r>Cairo, Egypt · 2+ Years Experience · Open to Remote</div>
       <h1 class="name" data-r data-d="1"><span class="ng">Abdulla</span><br>Hamdy</h1>
       <div class="typed-row" data-r data-d="2"><span id="typed"></span><span class="cur"></span></div>
-      <p class="hero-p" data-r data-d="3">I build production-grade backend systems — multi-tenant SaaS platforms, real-time APIs, payment integrations, and containerised deployments. Clean Architecture by default.</p>
+      <p class="hero-p" data-r data-d="3">Full Stack .NET Developer with 2+ years of professional experience building enterprise-grade systems. I design and deliver scalable Web APIs, clean architecture backends, and polished React frontends — from high-load examination platforms to production SaaS products.</p>
       <div class="ctas" data-r data-d="4">
         <a class="btn bp" href="#projects">View My Work</a>
         <a class="btn bw" href="https://wa.me/201157068224" target="_blank" rel="noopener">
@@ -262,8 +287,8 @@ footer a{color:var(--sub);text-decoration:none}footer a:hover{color:var(--vl)}
         <a class="btn bo" href="mailto:abdullahamdy825@yahoo.com">Email ↗</a>
       </div>
       <div class="stats" data-r data-d="5">
+        <div><span class="sn" data-cnt="2">0</span><span class="sl">Years Experience</span></div>
         <div><span class="sn" data-cnt="6">0</span><span class="sl">Public Projects</span></div>
-        <div><span class="sn" data-cnt="10">0</span><span class="sl">Technologies</span></div>
         <div><span class="sn" data-cnt="1">0</span><span class="sl">Live SaaS Product</span></div>
       </div>
     </div>
@@ -293,6 +318,68 @@ footer a{color:var(--sub);text-decoration:none}footer a:hover{color:var(--vl)}
       <div class="sk" data-r data-d="4">
         <div class="sk-h">DevOps & Data</div>
         <div class="tgs"><span class="tg">Docker</span><span class="tg">Docker Compose</span><span class="tg">MySQL</span><span class="tg">SQL Server</span><span class="tg">Serilog</span><span class="tg">Watchtower</span><span class="tg">GitHub Actions</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="w">
+    <div data-r><div class="kicker">Where I've worked</div><h2 class="stitle">Experience</h2></div>
+    <div class="timeline">
+
+      <div class="te" data-r data-d="1">
+        <div class="te-dot">💼</div>
+        <div class="te-body">
+          <div class="te-top">
+            <div>
+              <div class="te-title">Full Stack Engineer</div>
+              <div class="te-company">MKCL ARABIA Ltd.</div>
+            </div>
+            <span class="te-date">Mar 2025 – Present · 1 yr 6 mos</span>
+          </div>
+          <ul class="te-desc">
+            <li>Contributing to a large-scale <strong>Examination Management System</strong> serving a high volume of users in production.</li>
+            <li>Designing and developing Web APIs using <strong>.NET Core</strong> to support electronic examination platforms.</li>
+            <li>Implementing business logic for exam management, user handling, results processing, and scheduling.</li>
+            <li>Designing scalable databases with <strong>SQL Server</strong>, focused on performance optimisation under high load.</li>
+            <li>Collaborating with backend, frontend, and QA teams in professional development workflows.</li>
+          </ul>
+          <div class="te-tags">
+            <span class="pst">.NET Core</span><span class="pst">SQL Server</span><span class="pst">Web API</span><span class="pst">Enterprise Systems</span><span class="pst">High-Load</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="te" data-r data-d="2">
+        <div class="te-dot">🚀</div>
+        <div class="te-body">
+          <div class="te-top">
+            <div>
+              <div class="te-title">Software Developer</div>
+              <div class="te-company">Target Lines</div>
+            </div>
+            <span class="te-date">Jan 2024 – Feb 2025 · 1 yr 2 mos</span>
+          </div>
+          <ul class="te-desc">
+            <li>Developed software solutions and translated business requirements into efficient technical implementations.</li>
+            <li>Enhanced application performance and user experience across client-facing products.</li>
+          </ul>
+          <div class="te-tags">
+            <span class="pst">Software Development</span><span class="pst">Performance</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="edu-card" data-r>
+      <div class="edu-icon">🎓</div>
+      <div>
+        <div class="edu-name">SADAT ACADEMY for MANAGEMENT SCIENCES</div>
+        <div class="edu-deg">Bachelor of Business</div>
+        <div class="edu-year">Graduated 2024</div>
       </div>
     </div>
   </div>
@@ -492,7 +579,7 @@ hbg.addEventListener('click',()=>{hbg.classList.toggle('open');mob.classList.tog
 function cm(){hbg.classList.remove('open');mob.classList.remove('open')}
 
 // Typed
-const roles=['.NET Backend Developer','Clean Architecture Engineer','SaaS Builder','Full Stack Developer'];
+const roles=['Full Stack .NET Developer','Clean Architecture Engineer','ASP.NET Core Specialist','SaaS Builder','React & .NET Developer'];
 let ri=0,ci=0,del=false;
 const tel=document.getElementById('typed');
 function type(){
