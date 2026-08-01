@@ -164,6 +164,9 @@ h1.name{font-size:clamp(3rem,9vw,6.5rem);font-weight:900;letter-spacing:-.05em;l
 .pc[data-c="pnk"]::before{background:linear-gradient(90deg,#8b5cf6,#ec4899)}
 .pc[data-c="cyn"]::before{background:linear-gradient(90deg,var(--c),#3b82f6)}
 .pc[data-c="grn"]::before{background:linear-gradient(90deg,var(--g),#059669)}
+.pc[data-c="ind"]::before{background:linear-gradient(90deg,#6366f1,#8b5cf6)}
+.pc[data-c="tel"]::before{background:linear-gradient(90deg,#0d9488,#06b6d4)}
+.pc[data-c="wag"]::before{background:linear-gradient(90deg,#25d366,#128c7e)}
 
 /* visual pane */
 .pv{display:flex;align-items:center;justify-content:center;font-size:3rem;flex-shrink:0;position:relative;overflow:hidden}
@@ -176,6 +179,9 @@ h1.name{font-size:clamp(3rem,9vw,6.5rem);font-weight:900;letter-spacing:-.05em;l
 .pv[data-c="pnk"]{background:linear-gradient(135deg,rgba(139,92,246,.18),rgba(236,72,153,.1))}
 .pv[data-c="cyn"]{background:linear-gradient(135deg,rgba(6,182,212,.18),rgba(59,130,246,.1))}
 .pv[data-c="grn"]{background:linear-gradient(135deg,rgba(16,185,129,.18),rgba(5,150,105,.08))}
+.pv[data-c="ind"]{background:linear-gradient(135deg,rgba(99,102,241,.18),rgba(139,92,246,.1))}
+.pv[data-c="tel"]{background:linear-gradient(135deg,rgba(13,148,136,.18),rgba(6,182,212,.1))}
+.pv[data-c="wag"]{background:linear-gradient(135deg,rgba(37,211,102,.15),rgba(18,140,126,.08))}
 
 /* card body */
 .pb{padding:1.5rem;display:flex;flex-direction:column;gap:.8rem;flex:1}
@@ -288,7 +294,7 @@ footer a{color:var(--sub);text-decoration:none}footer a:hover{color:var(--vl)}
       </div>
       <div class="stats" data-r data-d="5">
         <div><span class="sn" data-cnt="2">0</span><span class="sl">Years Experience</span></div>
-        <div><span class="sn" data-cnt="6">0</span><span class="sl">Public Projects</span></div>
+        <div><span class="sn" data-cnt="9">0</span><span class="sl">Public Projects</span></div>
         <div><span class="sn" data-cnt="1">0</span><span class="sl">Live SaaS Product</span></div>
       </div>
     </div>
@@ -536,6 +542,71 @@ footer a{color:var(--sub);text-decoration:none}footer a:hover{color:var(--vl)}
           </div>
           <p class="pd">Analyses large server log files and surfaces the top 5 most frequent IP addresses with occurrence counts. Fully containerised with Docker for portable, reproducible execution on any machine.</p>
           <div class="ps"><span class="pst">C#</span><span class="pst">Docker</span><span class="pst">File I/O</span><span class="pst">CLI</span></div>
+        </div>
+      </div>
+
+      <!-- LogSift -->
+      <div class="pc" data-c="ind" data-r data-d="1"
+           onclick="window.open('https://github.com/abdulla662/LogSift','_blank')">
+        <div class="pv" data-c="ind">
+          <div style="display:flex;flex-direction:column;align-items:center;gap:8px">
+            <div style="font-size:2.2rem">🔍</div>
+            <div style="display:flex;gap:4px;flex-wrap:wrap;justify-content:center">
+              <div style="font-size:.55rem;color:#a5b4fc;padding:2px 6px;border-radius:3px;background:rgba(99,102,241,.2)">ERROR</div>
+              <div style="font-size:.55rem;color:#fde68a;padding:2px 6px;border-radius:3px;background:rgba(245,158,11,.15)">WARN</div>
+              <div style="font-size:.55rem;color:#fca5a5;padding:2px 6px;border-radius:3px;background:rgba(239,68,68,.15)">FATAL</div>
+            </div>
+          </div>
+        </div>
+        <div class="pb">
+          <div class="ph">
+            <div><div class="pn">LogSift</div><div class="pt">Streaming log analysis CLI</div></div>
+            <div class="pl"><a href="https://github.com/abdulla662/LogSift" onclick="event.stopPropagation()" target="_blank" rel="noopener">Code ↗</a></div>
+          </div>
+          <p class="pd">.NET 8 CLI tool that streams log files of any size via <code>IAsyncEnumerable</code> — zero memory growth. Detects Serilog, NLog, log4net, and plain text formats. Outputs categorised ERROR / WARN / FATAL files and a full summary report.</p>
+          <div class="ps"><span class="pst">.NET 8</span><span class="pst">IAsyncEnumerable</span><span class="pst">Streaming I/O</span><span class="pst">Regex</span><span class="pst">Spectre.Console</span><span class="pst">Docker</span></div>
+        </div>
+      </div>
+
+      <!-- MassDataAPI -->
+      <div class="pc" data-c="tel" data-r data-d="2"
+           onclick="window.open('https://github.com/abdulla662/MassDataAPI','_blank')">
+        <div class="pv" data-c="tel">
+          <div style="display:flex;flex-direction:column;align-items:center;gap:8px">
+            <div style="font-size:2.2rem">⚡</div>
+            <div style="font-size:.6rem;color:#5eead4;padding:3px 9px;border-radius:4px;background:rgba(13,148,136,.2);border:1px solid rgba(13,148,136,.35)">1,000,000 Records · &lt;100ms</div>
+          </div>
+        </div>
+        <div class="pb">
+          <div class="ph">
+            <div><div class="pn">MassDataAPI</div><div class="pt">High-performance data query API</div></div>
+            <div class="pl"><a href="https://github.com/abdulla662/MassDataAPI" onclick="event.stopPropagation()" target="_blank" rel="noopener">Code ↗</a></div>
+          </div>
+          <p class="pd">ASP.NET Core 8 API that auto-seeds <strong>1 million records</strong> on startup and serves them with sub-100ms responses. Composable LINQ filters, covering indexes, <code>AsNoTracking()</code>, and a stats aggregation endpoint — all documented in Swagger.</p>
+          <div class="ps"><span class="pst">ASP.NET Core 8</span><span class="pst">EF Core</span><span class="pst">SQLite</span><span class="pst">DB Indexing</span><span class="pst">Pagination</span><span class="pst">Swagger</span><span class="pst">Docker</span></div>
+        </div>
+      </div>
+
+      <!-- SheetNotify -->
+      <div class="pc" data-c="wag" data-r data-d="3"
+           onclick="window.open('https://github.com/abdulla662/SheetNotify','_blank')">
+        <div class="pv" data-c="wag">
+          <div style="display:flex;flex-direction:column;align-items:center;gap:8px">
+            <div style="font-size:2.2rem">📲</div>
+            <div style="display:flex;gap:5px;align-items:center;font-size:.58rem;color:#86efac">
+              <span style="padding:2px 6px;background:rgba(37,211,102,.15);border-radius:3px">Google Sheets</span>
+              <span style="color:#4ade80">→</span>
+              <span style="padding:2px 6px;background:rgba(37,211,102,.15);border-radius:3px">WhatsApp</span>
+            </div>
+          </div>
+        </div>
+        <div class="pb">
+          <div class="ph">
+            <div><div class="pn">SheetNotify</div><div class="pt">Booking confirmation automation</div></div>
+            <div class="pl"><a href="https://github.com/abdulla662/SheetNotify" onclick="event.stopPropagation()" target="_blank" rel="noopener">Code ↗</a></div>
+          </div>
+          <p class="pd">.NET 8 BackgroundService that polls a Google Sheet for new bookings and fires WhatsApp confirmations via Twilio. Handles rate limiting (1.1s between sends), restart-safe state tracking, and per-row failure isolation without skipping rows.</p>
+          <div class="ps"><span class="pst">.NET 8</span><span class="pst">BackgroundService</span><span class="pst">Google Sheets API</span><span class="pst">Twilio</span><span class="pst">Polly</span><span class="pst">OAuth2</span><span class="pst">Docker</span></div>
         </div>
       </div>
 
