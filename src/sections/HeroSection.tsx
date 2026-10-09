@@ -198,7 +198,7 @@ export default function HeroSection() {
               <img
                 src={portrait}
                 alt="Abdulla Hamdy"
-                className="w-full h-full object-cover object-top select-none rounded-full"
+                className="w-full h-full object-cover object-center select-none rounded-full"
                 style={{
                   boxShadow: '0 0 50px rgba(14,165,233,0.25), 0 0 100px rgba(124,58,237,0.15)',
                 }}
